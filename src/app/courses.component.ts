@@ -8,5 +8,5 @@ import { CoursesService } from './courses.service';
             `
 })
 export class CoursesComponent {
-    isActive = false;
+    isActive = true;
 }
