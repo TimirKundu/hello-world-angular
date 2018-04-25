@@ -4,19 +4,13 @@ import { CoursesService } from './courses.service';
 @Component({
     selector: 'courses',
     template: `
-            <div (click)="onDivClicked()" >
-                <button (click)="onSave($event)">Save Me</button>
-            </div>
+            <input (keyup.enter)="onKeyUp()" />
             `
 })
 export class CoursesComponent {
-
-    onDivClicked() {
-        console.log("On Div Clicked,,,,,,")
-    }
-
-    onSave($event) {
-        $event.stopPropagation()
-        console.log("Button was clicked", $event);
+    onKeyUp() {
+        // if ($event.keyCode === 13) {
+            console.log("ENTER was pressed");
+       //  }
     }
 }
