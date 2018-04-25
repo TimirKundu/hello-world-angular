@@ -4,13 +4,13 @@ import { CoursesService } from './courses.service';
 @Component({
     selector: 'courses',
     template: `
-            <input (keyup.enter)="onKeyUp()" />
+            <input #email (keyup.enter)="onKeyUp(email.value)" />
             `
 })
 export class CoursesComponent {
-    onKeyUp() {
+    onKeyUp(email) {
         // if ($event.keyCode === 13) {
-            console.log("ENTER was pressed");
+            console.log(email);
        //  }
     }
 }
