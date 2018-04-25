@@ -4,7 +4,7 @@ import { CoursesService } from './courses.service';
 @Component({
     selector: 'courses',
     template: `
-            <button class="btn btn-primary" [class.active]="isActive">Save Me</button>
+            <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save Me</button>
             `
 })
 export class CoursesComponent {
