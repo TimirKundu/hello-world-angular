@@ -1,3 +1,4 @@
+import { FavoriteChangedEventArgs } from './favourite/favourite.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -11,7 +12,7 @@ export class AppComponent {
     isFavorite : false    
   }
 
-  onFavoriteChange() {
-    console.log("on tapped start icon");
+  onFavoriteChange(eventArgs: FavoriteChangedEventArgs) {
+    console.log("on tapped start icon: ", eventArgs.newValue);
   }
 }
