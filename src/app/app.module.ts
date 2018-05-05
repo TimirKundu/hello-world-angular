@@ -22,7 +22,6 @@ import { TitleCasePipe } from './title-case.pipe';
     AuthorsComponent,
     SummaryPipe,
     FavouriteComponent,
-    FavouriteComponent,
     TitleCasePipe
   ],
   imports: [
