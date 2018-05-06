@@ -12,6 +12,12 @@ export class AppComponent {
     isFavorite : false    
   }
 
+  tweet = {
+    body: 'Here is the body of a tweet.....',
+    isLiked: false,
+    likesCount: 500
+  }
+
   onFavoriteChange(eventArgs: FavoriteChangedEventArgs) {
     console.log("on tapped start icon: ", eventArgs.newValue);
   }

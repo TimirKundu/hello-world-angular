@@ -13,6 +13,7 @@ import { AuthorsService } from './authors.service';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PanelComponent } from './panel/panel.component';
     SummaryPipe,
     FavouriteComponent,
     TitleCasePipe,
-    PanelComponent
+    PanelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
