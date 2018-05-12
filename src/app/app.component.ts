@@ -1,3 +1,4 @@
+import { FavoriteChangedEventArgs } from './favourite/favourite.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string
+  post = {
+    title: "Title",
+    isFavorite : false    
+  }
+
+  tweet = {
+    body: 'Here is the body of a tweet.....',
+    isLiked: false,
+    likesCount: 500
+  }
+
+  onFavoriteChange(eventArgs: FavoriteChangedEventArgs) {
+    console.log("on tapped start icon: ", eventArgs.newValue);
+  }
 }
