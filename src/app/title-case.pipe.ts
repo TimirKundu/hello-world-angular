@@ -21,7 +21,7 @@ export class TitleCasePipe implements PipeTransform {
         words[i] = words[i].substring(0, 1).toUpperCase() + words[i].substr(1).toLowerCase();
       }
     }
-sss
+
     return words.join(' ');
   }
 
