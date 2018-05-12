@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-<<<<<<< HEAD
   post = {
     title: "Title",
     isFavorite : false    
@@ -16,17 +15,15 @@ export class AppComponent {
   tweet = {
     body: 'Here is the body of a tweet.....',
     isLiked: false,
-    likesCount: 500
+    likesCount: 500ss
   }
 
   onFavoriteChange(eventArgs: FavoriteChangedEventArgs) {
     console.log("on tapped start icon: ", eventArgs.newValue);
   }
-=======
   courses = [
     { id: 1, name: 'course1'},
     { id: 2, name: 'course2'},
     { id: 3, name: 'course3'}
   ]
->>>>>>> origin/directives
 }
