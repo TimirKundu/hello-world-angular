@@ -15,11 +15,6 @@ pipeline {
                 sh 'npm config ls'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
-        }
         stage('Deployment') {
             steps {
                 sh 'ng serve'
