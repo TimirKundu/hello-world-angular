@@ -15,17 +15,14 @@ pipeline {
                 sh 'npm config ls'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'npm test'
+            }
+        }
         stage('Deployment') {
             steps {
                 sh 'ng serve'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
             }
         }
     }
