@@ -4,8 +4,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "Angular Build started"'
                 sh 'npm install'
+                sh 'echo "Angular Build completed"'
+            }
+        }
+        stage('PostBuild') {
+            steps {
+                sh 'echo "PostBuild started"'
+                sh 'npm config ls'
             }
         }
         stage('Deployment') {
