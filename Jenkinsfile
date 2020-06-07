@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                sh 'echo "Deployment started"'
+                sh 'ng serve'
             }
         }
         stage('Test') {
