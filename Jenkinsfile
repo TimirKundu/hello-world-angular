@@ -2,6 +2,13 @@ pipeline {
     agent any
     tools {nodejs "node"}
     stages {
+        stage('PreBuild') {
+          steps {
+            sh 'echo "------Removing npm----"'
+            sh 'npm uninstall'
+            sh 'echo "------npm uninstall finished----"'
+          }
+        }
         stage('Build') {
             steps {
                 sh 'echo "Angular Build started"'
