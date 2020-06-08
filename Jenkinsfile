@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh 'echo "Angular Build started"'
                 sh 'npm install'
+                sh 'ng build --prod'
                 sh 'echo "Angular Build completed"'
             }
         }
