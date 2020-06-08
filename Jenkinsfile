@@ -26,6 +26,9 @@ pipeline {
         }
         stage('Deployment') {
             steps {
+                sh 'echo "Deployment started"'
+                sh 'rm ../../apps/*'
+                sh 'cp ./dist/apps/* ../../apps/'
                 sh 'echo "Project deployed"'
                 //sh 'npm start'
             }
