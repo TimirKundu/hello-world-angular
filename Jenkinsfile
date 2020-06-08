@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Angular Build started"'
+                sh 'cd ${WORKSPACE}'
                 sh 'npm install'
                 sh 'npm run ng build --prod'
                 sh 'echo "Angular Build completed"'
